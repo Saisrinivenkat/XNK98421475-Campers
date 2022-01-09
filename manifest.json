@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Campers Smart Notes",
+  "description":"Just a small Extension for taking notes",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "images/icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": ["jquery-3.6.0.min.js", "script.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon16.png",
+    "32":"images/icon32.png",
+    "128": "images/icon128.png" 
+  }
+}
